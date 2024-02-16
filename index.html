@@ -86,25 +86,26 @@
                               <button class="btn rounded-full bg-[#894189] text-white p-4">
                                     life
                                     <i class="fa-regular fa-heart"></i>
-                                   <span>1</span>
+                                   <span id="current-life">5</span>
                               </button>                                
                               <button class="btn rounded-full  bg-[#360490] text-white px-4">
                                     score
                                     <i class="fa-solid fa-comments-dollar"></i>
-                                    <span>1</span>
+                                    <span id="current-score">0</span>
                               </button>
                          </div>
                   </div>
             </section>
             <!-- playground end  -->
             <!--final Score start-->
-            <section id="score" class=" flex justify-center items-center min-h-screen hidden">
+            <section id="final-score" class=" flex justify-center items-center min-h-screen hidden">
                   <div class="bg-[#FFFFFF33] text-center space-y-6 p-4 rounded-lg">
+                        <h4 class="text-3xl">GameOver</h4>
                      <h1 class="text-8xl text-white">
                         <span class="font-extrabold">score:</span>
-                        <span>14</span>
+                        <span id="last-score">14</span>
                      </h1>
-                     <button class="btn">Play Again</button>
+                     <button onclick="play()" id="play" class="btn">Play Again</button>
                      <p class="text-white">Practice will make you Pro</p>
 
                   </div>      
